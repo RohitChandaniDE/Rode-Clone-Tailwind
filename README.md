@@ -16,7 +16,7 @@
 
 
 ![Badge](https://img.shields.io/badge/PROJECT%20LINK-BELOW-lightgrey) 
-### [HERE](https://rode-clone-tailwind.netlify.app/)
+### [HERE](https://rode-clone-tailwindcsss.netlify.app/)
 
 ***
 
