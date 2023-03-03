@@ -1,4 +1,4 @@
-# Rode Clone Tailwind
+# Rode Clone TailwindCSS
 
 
 ![Tech](https://img.shields.io/badge/HTML-Tailwind-blue)
