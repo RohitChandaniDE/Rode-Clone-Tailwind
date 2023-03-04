@@ -11,21 +11,31 @@
 </head>
 <body class="container mx-auto">
 <!-- Top section -->
-<section class="flex justify-around gap-64 mt-1 mb-1 cursor-pointer">
+<section class="flex justify-around bg-white sm:gap-64 mt-2 mb-2 cursor-pointer sticky top-0 z-30">
    <div class="left flex gap-[5px]">
-    <img class="w-4 h-6" src="images/location.png" alt="location">
+    <div class="hamburger inline-block cursor-pointer lg:hidden">
+      <div class="line h-0.5 w-4 my-1 bg-black"></div>
+      <div class="line h-0.5 w-4 my-1 bg-black"></div>
+      <div class="line h-0.5 w-4 my-1 bg-black"></div>
+    </div>
+    <img class="w-4 h-5" src="images/location.png" alt="location">
     <h1 class="text-sm font-mono">EN</h1>
-    <button class="rotate-90 -mt-1 font-bold text-xs" type="button">></button>
-   </div>
+    <button class="rotate-90 -mt-1 xl:mt-0 font-bold text-xs" type="button">></button>
+  </div>
 
-   <div class="right flex gap-3">
-    <img class="w-30 h-4 mt-1" src="images/RodeX social media.png" alt="RodeX">
-    <img src="images/person.svg" alt="person">
+    <div class="w-20 xl:hidden">
+      <img src="images/rode logo.png" alt="rode logo">
+    </div>
+  
+    <div class="right flex gap-3">
+    <img class="w-30 h-4 mt-1 hidden xl:block" src="images/RodeX social media.png" alt="RodeX">
+    <img class="hidden xl:block" src="images/person.svg" alt="person">
+    <div class="w-6 xl:hidden"><img src="images/magnifying glass.png" alt="magnifyting glass"></div>
    </div>
 </section>
 <hr>
 <!-- Navbar section -->
-<div class="sticky top-0 z-30 bg-white bg-base-100 pt-1 pb-1">
+<div class="sticky top-0 z-50 bg-white bg-base-100 pt-1 pb-1 hidden xl:block">
 <section class="flex justify-center gap-[150px] my-7 cursor-pointer">
   <div class="w-20 "><img src="images/rode logo.png" alt="rode logo"></div>
   <div class="flex list-none gap-24 text-sm ">
@@ -39,214 +49,226 @@
 </section>
 </div>
 <!-- NTH-100M section -->
-<section aria-label="NTH">
-  <div class="left z-0 absolute mt-44 ml-[350px]">
-   <img class="w-[600px] mb-6" src="images/NTH-100M.svg" alt="nth logo">
-   <h1 class="text-white font-sans text-3xl ml-16 mb-4 text-center">Hear and Be Heard With Incredible
+<section class="NTH flex flex-col-reverse justify-center items-center md:flex-row mb-[215px] sm:mb-[275px] lg:mb-0">
+  <div class="left z-0 absolute mt-[375px] sm:mt-[550px] lg:mt-12 xl:mt-16 2xl:mt-28 sm:mr-0 lg:mr-[245px] xl:mr-[500px] 2xl:mr-[650px] bg-black lg:bg-inherit 
+              py-[13px] px-[47px] sm:py-[25px] sm:px-[152px]">
+   <img class="w-[300px] sm:w-[400px] xl:w-[600px] ml-6 sm:ml-16 lg:ml-14 mb-3 xl:mb-6" src="images/NTH-100M.svg" alt="nth logo">
+   <h1 class="text-white font-sans text-xs sm:text-lg xl:text-3xl sm:ml-16 mb-4 text-center">Hear and Be Heard With Incredible
      <br>Audio</h1>
-   <p class="text-gray-400 font-sans text-lg text-center ml-14 leading-6 mb-10">The NTH-100M is a professional over-ear headset that combines<br>
+   <p class="text-gray-400 font-sans text-xs xl:text-lg text-center sm:ml-14 leading-4 xl:leading-6 mb-5 xl:mb-10">The NTH-100M is a professional over-ear headset that combines<br>
       the exceptional sonic performance and comfort of the award- <br>
      winning NTH-100 headphones with a broadcast-quality headset<br>microphone.</p>
       <div class="flex">
-       <h1 class="text-[#AD9970] text-lg ml-48 mt-1 mr-2 cursor-pointer">LEARN MORE ></h1>
+       <h1 class="text-[#AD9970] text-xs sm:text-sm xl:text-lg ml-20 sm:ml-40 xl:ml-48 mt-1 mr-2 cursor-pointer">LEARN MORE</h1>
        <button class="bg-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] hover:duration-500
-        text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer" type="button">BUY NOW</button>
+        text-white px-4 xl:px-5 py-1 rounded-full text-xs sm:text-sm xl:text-lg font-bold cursor-pointer" type="button">BUY NOW</button>
       </div>
   </div>
+  <div>
     <img class="z-[-1] relative" src="images/1.jpg" alt="headphones">
+  </div>
 </section>
 <!-- Video micro 2 section -->
-<section aria-label="Video-m2">
-    <div class="left z-0 absolute mt-52 ml-[900px]">
-     <img class="w-[550px] ml-14 mb-6" src="images/VideoMicroII.svg" alt="nth logo">
-     <h1 class="text-black font-sans text-3xl ml-16 mb-4 text-center">Small Size. Stunning Sound.</h1>
-     <p class="text-gray-700 font-sans text-lg text-center ml-14 leading-6 mb-10">
+<section class="Video-m2 flex flex-col-reverse justify-center items-center md:flex-row mb-[215px] sm:mb-[275px] lg:mb-0">
+    <div class="left z-0 absolute mt-[375px] sm:mt-[550px] lg:mt-10 lg:ml-[500px] xl:ml-[600px] 2xl:ml-[600px]">
+     <img class="w-[300px] sm:w-[400px] xl:w-[550px] ml-7 sm:ml-14 mb-3 xl:mb-6" src="images/VideoMicroII.svg" alt="nth logo">
+     <h1 class="text-black font-sans text-lg xl:text-3xl sm:ml-16 mb-4 text-center">Small Size. Stunning Sound.</h1>
+     <p class="text-gray-700 font-sans text-xs xl:text-lg text-center sm:ml-14 leading-4 xl:leading-6 mb-5 xl:mb-10">
       The VideoMicro II is an ultra-compact and easy-to-use microphone<br>
       that will instantly elevate your camera or smartphone audio,<br>
       perfect for filmmaking, content creation, home videos, and more.</p>
         <div class="flex">
-         <h1 class="text-[#AD9970] text-lg ml-48 mt-1 mr-2 cursor-pointer">LEARN MORE ></h1>
+         <h1 class="text-[#AD9970] text-xs sm:text-sm xl:text-lg ml-20 sm:ml-40 xl:ml-48 mt-1 mr-2 cursor-pointer">LEARN MORE</h1>
          <button class="bg-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] hover:duration-500
-          text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer" type="button">BUY NOW</button>
+          text-white px-4 xl:px-5 py-1 rounded-full text-xs sm:text-sm xl:text-lg font-bold cursor-pointer" type="button">BUY NOW</button>
         </div>
     </div>
+    <div>
       <img class="z-[-1] relative" src="images/2.png" alt="headphones">
+    </div>
   </section>
-<!-- Nt+ section -->
-<section aria-label="NTH+">
-  <div class="left z-0 absolute mt-44 ml-[350px]">
-   <img class="w-[550px] mb-6 ml-14" src="images/NT-USB+.svg" alt="nth logo">
-   <h1 class="text-white font-sans text-3xl ml-16 mb-4 text-center">Sound Like a Pro</h1>
-   <p class="text-gray-400 font-sans text-lg text-center ml-14 leading-6 mb-10">
+<!-- Nt-USB+ section -->
+<section class="NTH+ flex flex-col-reverse justify-center items-center md:flex-row mb-[190px] sm:mb-[228px] lg:mb-0">
+  <div class="left z-0 absolute mt-[342px] sm:mt-[500px] lg:mt-12 xl:mt-10 sm:mr-0 lg:mr-[300px] xl:mr-[600px] 2xl:mr-[650px] bg-black lg:bg-inherit 
+  py-[13px] px-[57px] sm:py-[25px] sm:px-[152px]">
+   <img class="w-[300px] sm:w-[400px] xl:w-[600px] ml-4 sm:ml-16 lg:ml-9 mb-3 xl:mb-6" src="images/NT-USB+.svg" alt="nth logo">
+   <h1 class="text-white font-sans text-xs sm:text-lg xl:text-3xl sm:ml-16 mb-4 text-center">Sound Like a Pro</h1>
+   <p class="text-gray-400 font-sans text-xs xl:text-lg text-center sm:ml-14 leading-4 xl:leading-6 mb-5 xl:mb-10">
     The NT-USB+ is a professional USB microphone with next-<br>
     generation features that make it easy for anyone to capture<br>
     pristine, studio-quality audio – from musicians to podcasters.</p>
       <div class="flex">
-       <h1 class="text-[#AD9970] text-lg ml-48 mt-1 mr-2 cursor-pointer">LEARN MORE ></h1>
+       <h1 class="text-[#AD9970] text-xs sm:text-sm xl:text-lg ml-20 sm:ml-40 lg:ml-32 xl:ml-56 mt-1 mr-2 cursor-pointer">LEARN MORE</h1>
        <button class="bg-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] hover:duration-500
-        text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer" type="button">BUY NOW</button>
+       text-white px-4 xl:px-5 py-1 rounded-full text-xs sm:text-sm xl:text-lg font-bold cursor-pointer" type="button">BUY NOW</button>
       </div>
   </div>
     <img class="z-[-1] relative" src="images/3.jpg" alt="headphones">
 </section>
 <!--RodeX section-->
-<section aria-label="RodeX">
-  <div class="left z-0 absolute mt-[195px] ml-[600px]">
-   <img class="w-[550px] mb-6 ml-14" src="images/RODEX_Launch-Website-Banners_copy_mobile-03.svg" alt="nth logo">
-   <button class="bg-black text-red-600 px-6 py-2 rounded-full text-sm 
-      ml-64 font-bold cursor-pointer" type="button">LEARN MORE</button>
+<section class="RodeX flex flex-col-reverse justify-center items-center md:flex-row mb-[190px] sm:mb-[216px] lg:mb-0">
+  <div class="left z-0 absolute mt-[350px] sm:mt-[490px] lg:mt-[2px] xl:mt-[-9px] 2xl:mt-[-8px] lg:mr-[65px] xl:mr-[90px] 2xl:mr-[40px] bg-black lg:bg-inherit
+               py-[5px] px-[56px] sm:py-[2px] sm:px-[156px]">
+   <img class="w-[300px] sm:w-[400px] xl:w-[550px] mb-6 ml-6 sm:ml-14" src="images/RODEX_Launch-Website-Banners_copy_mobile-03.svg" alt="nth logo">
+   <button class="text-black 2xl:text-red-600 bg-red-600 2xl:bg-black px-4 xl:px-6 py-1 xl:py-2 rounded-full text-xs sm:text-sm xl:text-sm 
+                    ml-28 sm:ml-44 lg:ml-52 xl:ml-64 font-bold cursor-pointer mb-4 lg:mb-0" type="button">LEARN MORE</button>
   </div>
     <img class="z-[-1] relative" src="images/4.jpg" alt="headphones">
 </section>
-<!-- Rode pro 2 section -->
-<section class="mb-20">
-  <div class="left z-0 absolute mt-44 ml-[900px]">
-   <img class="w-[550px] mb-6 ml-14" src="images/RODECasterProII.svg" alt="nth logo">
-   <h1 class="text-white font-sans text-3xl ml-16 mb-4 text-center">The Revolution Is Here</h1>
-   <p class="text-gray-400 font-sans text-lg text-center ml-14 leading-6 mb-10">
+<!-- Rodecaster pro 2 section -->
+<section class="flex flex-col-reverse justify-center items-center md:flex-row mb-[210px] sm:mb-[250px] lg:mb-10">
+  <div class="left z-0 absolute mt-[345px] sm:mt-[513px] lg:mt-0 xl:mt-4 2xl:mt-10 lg:ml-[450px] xl:ml-[650px]  bg-black lg:bg-inherit
+               py-[13px] px-[48px] sm:py-[25px] sm:px-[156px]">
+   <img class="w-[300px] sm:w-[400px] xl:w-[550px] ml-10 sm:ml-14 mb-3 xl:mb-6" src="images/RODECasterProII.svg" alt="nth logo">
+   <h1 class="text-white font-sans text-xs sm:text-lg xl:text-3xl sm:ml-16 mb-4 text-center">The Revolution Is Here</h1>
+   <p class="text-gray-400 font-sans text-[11px] sm:text-xs xl:text-lg text-center sm:ml-14 leading-4 xl:leading-6 mb-5 xl:mb-10">
     The RØDECaster Pro II is the world's most powerful all-in-one<br>
     audio solution for streamers, podcasters, musicians, and creators.<br>
     Take your content to the next level.</p>
       <div class="flex">
-       <h1 class="text-[#AD9970] text-lg ml-48 mt-1 mr-2 cursor-pointer">LEARN MORE ></h1>
+       <h1 class="text-[#AD9970] text-sm xl:text-lg ml-20 sm:ml-40 xl:ml-48 mt-1 mr-2 cursor-pointer">LEARN MORE</h1>
        <button class="bg-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] hover:duration-500
-        text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer" type="button">BUY NOW</button>
+       text-white px-4 xl:px-5 py-1 rounded-full text-xs sm:text-sm xl:text-lg font-bold cursor-pointer" type="button">BUY NOW</button>
       </div>
   </div>
     <img class="z-[-1] relative" src="images/5.jpg" alt="headphones">
 </section>
 <!-- Rode blog section -->
 <h1 class="text-center text-[#AD9970] font-bold hover:opacity-75 mb-10 text-3xl hover:cursor-pointer">Latest From The RØDE Blog</h1>
-<section class="bg-[#F8F9FA] pb-20 pt-20">
+<section class="bg-[#F8F9FA] pl-10 xl:pl-0 pr-10 xl:pr-0 pb-20 pt-20">
   <!-- Top -->
-  <div class="top flex justify-center gap-10">
+  <div class="top flex flex-col justify-center items-center sm:flex-row gap-10">
       <div class="left">
        <div class="bg-[#FFFFFF]">
-        <h1 class="text-black font-medium text-3xl ml-4 mb-6 pt-3 text-center">Introducing the NTH-100M Professional <br>Over-ear Headset</h1>
+        <h1 class="text-black font-medium lg:text-2xl xl:text-3xl ml-4 mb-4 lg:mb-6 pt-3 text-center">Introducing the NTH-100M Professional <br>Over-ear Headset</h1>
         <img class="mb-6" src="images/6.jpg" alt="image 6">
-        <p class="text-lg text-center">The NTH-100M is a professional over-ear headset that combines <br>
+        <p class="text-[10px] lg:text-sm xl:text-lg text-center">The NTH-100M is a professional over-ear headset that combines <br>
           our award-winning NTH-100 headphones with a broadcast-quality <br>microphone.</p>
           <button class="bg-[#AD9970] hover:border hover:border-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] hover:duration-500
-        text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer ml-52 mt-14 mb-8" type="button">LEARN MORE</button>
+        text-white px-5 py-1 rounded-full text-sm lg:text-lg font-bold cursor-pointer ml-24 lg:ml-36 xl:ml-52 mt-12 xl:mt-14 mb-8" type="button">LEARN MORE</button>
        </div>
       </div>
       
       <div class="right">
         <div class="bg-[#FFFFFF]">
-         <h1 class="text-black font-medium text-3xl ml-4 mb-4 text-center">RØDECaster Pro II Firmware 1.1.1<br>
+         <h1 class="text-black font-medium lg:text-2xl xl:text-3xl ml-4 mb-5 2xl:mb-4 text-center">RØDECaster Pro II Firmware 1.1.1<br>
           Introduces Advanced Sub-mixing and <br>More</h1>
          <img class="mb-6 -mt-4" src="images/7.jpg" alt="image 7">
-         <p class="text-lg text-center">The latest major firmware update for the RØDECaster Pro II<br>
+         <p class="text-[10px] lg:text-sm xl:text-lg text-center">The latest major firmware update for the RØDECaster Pro II<br>
           introduces advanced sub-mixing and other enhancements for a<br>flexible workflow.</p>
            <button class="bg-[#AD9970] hover:border hover:border-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] hover:duration-600
-         text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer ml-52 mt-14 mb-8" type="button">LEARN MORE</button>
+         text-white px-5 py-1 rounded-full text-sm lg:text-lg font-bold cursor-pointer ml-24 lg:ml-36 xl:ml-52 mt-12 xl:mt-14 mb-8" type="button">LEARN MORE</button>
         </div>
        </div>
     </div>
 <!-- Bottom -->
-<div class="bottom flex justify-center gap-10 pt-12">
+<div class="bottom flex flex-col justify-center items-center sm:flex-row gap-10 pt-12">
   <div class="left">
    <div class="bg-[#FFFFFF]">
-    <h1 class="text-black font-medium text-3xl text-center">Introducing New Wireless GO II Firmware:<br>
+    <h1 class="text-black font-medium lg:text-xl xl:text-3xl ml-4 pt-2 pb-2 xl:mb-5 2xl:mb-4 text-center">Introducing New Wireless GO II Firmware:<br>
       Camera Presets, Nested Recordings and <br>More</h1>
     <img class="mb-6" src="images/8.jpg" alt="image 6">
-    <p class="text-lg text-center">Here’s everything you need to know about the new Wireless GO II<br>
+    <p class="text-[10px] lg:text-sm xl:text-lg text-center">Here’s everything you need to know about the new Wireless GO II<br>
       and RØDE Central updates</p>
       <button class="bg-[#AD9970] hover:border hover:border-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] hover:duration-500
-    text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer ml-52 mt-14 mb-8" type="button">LEARN MORE</button>
+      text-white px-5 py-1 rounded-full text-sm lg:text-lg font-bold cursor-pointer ml-24 lg:ml-36 xl:ml-52 mt-12 xl:mt-14 mb-8" type="button">LEARN MORE</button>
    </div>
   </div>
   
   <div class="right">
     <div class="bg-[#FFFFFF]">
-     <h1 class="text-black font-medium text-3xl ml-4 mb-6 pt-3 text-center">How to Use VideoMicro II with an iPhone<br>
+     <h1 class="text-black font-medium lg:text-xl xl:text-3xl ml-4 pt-4 2xl:pt-[52px] mb-6 lg:mb-7 xl:mb-14 2xl:mb-4 text-center">How to Use VideoMicro II with an iPhone<br>
       or Android Smartphone</h1>
      <img class="mb-6" src="images/9.jpg" alt="image 7">
-     <p class="text-lg text-center">In this article we take a look at how to mount and connect your<br>
+     <p class="text-[10px] lg:text-sm xl:text-lg text-center">In this article we take a look at how to mount and connect your<br>
       VideoMicro II to your smartphone.</p>
        <button class="bg-[#AD9970] hover:border hover:border-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] hover:duration-500
-     text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer ml-52 mt-14 mb-8" type="button">LEARN MORE</button>
+       text-white px-5 py-1 rounded-full text-sm lg:text-lg font-bold cursor-pointer ml-24 lg:ml-36 xl:ml-52 mt-12 xl:mt-14 mb-8" type="button">LEARN MORE</button>
     </div>
    </div>
 </div>
 </section>
 <!-- Cards section -->
 <section aria-label="CARDS">
-<h1 class="text-center text-[#767676] font-bold mb-10 mt-10 text-4xl">Explore The RØDE Range</h1>
-<div class="microphones mb-6 ml-[170px] cursor-pointer hover:opacity-90 hover:duration-200">
-  <h1 class="absolute z-0 text-white font-bold text-[80px] ml-[300px] mt-[80px]">MICROPHONES</h1>
+<h1 class="text-center text-[#767676] font-bold mb-10 mt-10 text-lg sm:text-xl lg:text-4xl">Explore The RØDE Range</h1>
+<div class="microphones mb-6 xl:ml-[45px] 2xl:ml-[170px] cursor-pointer hover:opacity-90 hover:duration-200">
+  <h1 class="absolute z-0 text-white font-bold text-[30px] sm:text-[60px] lg:text-[80px] 
+             ml-[105px] sm:ml-[170px] lg:ml-[225px] xl:ml-[300px] mt-[35px] sm:mt-[55px] lg:mt-[80px]">MICROPHONES</h1>
   <img class="z-[-1] relative" src="images/10.png" alt="headphones">
 </div>
-<div class="microphones mb-6 ml-[170px] cursor-pointer hover:opacity-90 hover:duration-200">
-  <h1 class="absolute z-0 text-white font-bold text-[80px] ml-[175px] mt-[80px]">INTERFACES & MIXERS</h1>
+<div class="microphones mb-6 xl:ml-[45px] 2xl:ml-[170px] cursor-pointer hover:opacity-90 hover:duration-200">
+  <h1 class="absolute z-0 text-white font-bold text-[30px] sm:text-[60px] lg:text-[80px] 
+             ml-[50px] sm:ml-[60px] lg:ml-[85px] xl:ml-[175px] mt-[35px] sm:mt-[55px] lg:mt-[80px]">INTERFACES & MIXERS</h1>
   <img class="z-[-1] relative" src="images/11.jpg" alt="headphones">
 </div>
-<div class="microphones mb-6 ml-[170px] cursor-pointer hover:opacity-90 hover:duration-200">
-  <h1 class="absolute z-0 text-white font-bold text-[80px] ml-[380px] mt-[80px]">SOFTWARE</h1>
+<div class="microphones mb-6 xl:ml-[45px] 2xl:ml-[170px] cursor-pointer hover:opacity-90 hover:duration-200">
+  <h1 class="absolute z-0 text-white font-bold text-[30px] sm:text-[60px] lg:text-[80px] 
+             ml-[130px] sm:ml-[225px] lg:ml-[300px] xl:ml-[380px] mt-[35px] sm:mt-[55px] lg:mt-[80px]">SOFTWARE</h1>
   <img class="z-[-1] relative" src="images/12.png" alt="headphones">
 </div>
-<div class="microphones mb-32 ml-[170px] cursor-pointer hover:opacity-90 hover:duration-200">
-  <h1 class="absolute z-0 text-white font-bold text-[80px] ml-[350px] mt-[80px]">ACCESSORIES</h1>
+<div class="microphones mb-32 xl:ml-[45px] 2xl:ml-[170px] cursor-pointer hover:opacity-90 hover:duration-200">
+  <h1 class="absolute z-0 text-white font-bold text-[30px] sm:text-[60px] lg:text-[80px] 
+             ml-[115px] sm:ml-[190px] lg:ml-[250px] xl:ml-[350px] mt-[35px] sm:mt-[55px] lg:mt-[80px]">ACCESSORIES</h1>
   <img class="z-[-1] relative" src="images/13.png" alt="headphones">
 </div>
 </section>
 <hr class="mb-20">
 <!-- Footer section 1 -->
-<footer class="flex justify-center gap-[50px] mb-10">
-   <div class="ml-2">
+<footer class="flex flex-col justify-center items-center sm:flex-row gap-[50px] sm:gap-[15px] lg:gap-[50px] mb-10">
+   <div class="ml-2 sm:mt-[-135px]">
     <img src="images/RODE_logo_footer.svg" alt="rode image">
    </div>
   <div>
     <div class="products list-none -mt-2 leading-8">
-      <li class="text-black font-sans font-bold text-xl">Products</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer" >Microphones</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Headphones</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Interfaces and Mixers</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Accessories</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Software</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Apparel</li>
+      <li class="text-black font-sans font-bold text-xl text-center sm:text-justify">Products</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify" >Microphones</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Headphones</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Interfaces and Mixers</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Accessories</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Software</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Apparel</li>
     </div>
   </div>
   <div>
-    <div class="Support list-none -mt-2 leading-8">
-      <li class="text-black font-sans font-bold">Support</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Contact RØDE</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Service Centre</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Warranty</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Where to Buy</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Authorised Dealers</li>
+    <div class="Support list-none sm:-mt-10 leading-8">
+      <li class="text-black font-sans font-bold text-center sm:text-justify">Support</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Contact RØDE</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Service Centre</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Warranty</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Where to Buy</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Authorised Dealers</li>
     </div>
   </div>
   <div>
     <div class="company list-none -mt-2 leading-8">
-      <li class="text-black font-sans font-bold">Company</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">About RØDE</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">News and Info</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Job Opportunities</li>
-      <li class="text-black font-sans font-bold">Account</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Manage your Account</li>
-      <li class="text-gray-700 hover:text-gray-600 cursor-pointer">Create Account</li>
+      <li class="text-black font-sans font-bold text-center sm:text-justify">Company</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">About RØDE</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">News and Info</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Job Opportunities</li>
+      <li class="text-black font-sans font-bold text-center sm:text-justify">Account</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Manage your Account</li>
+      <li class="text-gray-700 hover:text-gray-600 cursor-pointer text-center sm:text-justify">Create Account</li>
     </div>
   </div>
-  <div>
-    <h1 class="text-black font-sans font-bold text-2xl text-right pl-[90px] -mt-4">Subscribe to our latest <br>news and offers</h1>
+  <div class="sm:mt-[-130px] xl:mt-[-100px] 2xl:-mt-20">
+    <h1 class="text-black font-sans font-bold text-base lg:text-xl xl:text-2xl sm:text-right sm:ml-[-100px] xl:pl-[90px] -mt-1 lg:-mt-4 text-center">Subscribe to our latest <br>news and offers</h1>
     <button class="bg-[#AD9970] hover:border hover:border-[#AD9970] hover:bg-[#FFFFFF] hover:text-[#AD9970] 
-    hover:duration-500 text-white px-5 py-1 rounded-full text-lg font-bold cursor-pointer ml-[320px] mt-5" 
+    hover:duration-500 text-white px-5 py-1 rounded-full text-xs lg:text-base xl:text-lg font-bold cursor-pointer ml-[40px] sm:ml-[10px] lg:ml-[110px] xl:ml-[230px] 2xl:ml-[320px] mt-5" 
     type="button">Sign Up</button>
   </div>
 </footer>
 <!-- Vertical line -->
-<div class="w-[1220px] border-b border-gray-300 ml-[315px] mb-10"></div>
+<div class="xl:w-[1150px] 2xl:w-[1220px] border-b border-gray-300 xl:ml-[60px] 2xl:ml-[150px] mb-10"></div>
 <!-- Footer section 2 -->
-<footer class="flex justify-center mb-14 gap-[155px]">
-<div class="font-bold text-gray-500 text-lg"><h1>© 2023 RØDE All Rights Reserved.</h1></div>
-<div class="font-bold text-gray-500 text-lg"><h1>Privacy Policy | Terms & Conditions</h1></div>
- <div class="social flex justify-center gap-4 -mt-7 cursor-pointer">
-    <img src="images/Facebook Icon.svg" alt="fb">
-    <img src="images/Twitter Icon.svg" alt="twitter">
-    <img src="images/Instagram Icon.svg" alt="insta">
-    <img class="w-12 h-14 mt-[1.25px] -ml-1" src="images/yt.png" alt="yt">
-    <img class="w-14 h-11 -ml-4 mt-2" src="images/tiktok_logo.png" alt="tt">
+<footer class="flex flex-col justify-center items-center lg:flex-row md:mb-6 lg:mb-14 gap-[10px] lg:gap-[110px] 2xl:gap-[155px]">
+<div class="order-3 lg:order-1 font-bold text-gray-500 text-sm 2xl:text-lg"><h1>© 2023 RØDE All Rights Reserved.</h1></div>
+<div class="order-1 lg:order-2 font-bold text-gray-500 text-sm 2xl:text-lg mb-7 md:mb-4 lg:mb-0"><h1>Privacy Policy | Terms & Conditions</h1></div>
+ <div class="order-2 lg:order-3 social flex justify-center gap-4 -mt-7 lg:-mt-5 cursor-pointer">
+    <img class="w-7 h-7 mt-4" src="images/Facebook Icon.svg" alt="fb">
+    <img class="w-7 h-7 mt-4" src="images/Twitter Icon.svg" alt="twitter">
+    <img class="w-7 h-7 mt-4" src="images/Instagram Icon.svg" alt="insta">
+    <img class="w-10 h-14 mt-[1.25px] -ml-1" src="images/yt.png" alt="yt">
+    <img class="w-10 h-10 -ml-4 mt-2" src="images/tiktok_logo.png" alt="tt">
     <img class="w-30 h-6 -ml-3 mt-[17px]" src="images/RodeX social media.png" alt="rodee">
  </div>
 </footer>
